@@ -1,8 +1,8 @@
-import { Text, PresentationControls, OrbitControls, useGLTF, Stage } from '@react-three/drei'
+import { Html, Text, PresentationControls, OrbitControls, useGLTF, Stage } from '@react-three/drei'
 import { Perf } from 'r3f-perf'
 import { useControls } from 'leva'
 import * as THREE from 'three'
-
+// https://brandonkylely.github.io/practice-portfolio/
 function Scene() {
   // model imports
   const phone = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/iphone-x/model.gltf')
@@ -10,14 +10,14 @@ function Scene() {
   // perf toggle
   const { perfVisible } = useControls('performance', {
     perfVisible: true
+  })
+
+const { namePostion } = useControls('debug', {
+  namePostion: [0, 1.5, -1.2]
 })
 
-// const { namePostion } = useControls('debug', {
-//   namePostion: [0, 0, 1]
-// })
-
     return <>
-    {/* <OrbitControls makeDefault/> */}
+    <OrbitControls makeDefault/>
     { perfVisible && <Perf position="top-left" /> }
 
     <Stage
@@ -69,7 +69,17 @@ function Scene() {
         <primitive 
           object={computer.scene} 
           position={[0, -1, 0]}
-          />
+          >
+            <Html
+              transform
+              wrapperClass="htmlScreen"
+              distanceFactor={ 1.17 }
+              position= {[0, 1.56, -1.4]}
+              rotation-x={ - 0.256 }
+          >
+              <iframe src="https://brandonkylely.github.io/practice-portfolio/" />
+          </Html>
+          </primitive>
     </>
 }
 
