@@ -1,12 +1,17 @@
-import { Html, Text, PresentationControls, OrbitControls, useGLTF, Stage } from '@react-three/drei'
+import { ContactShadows, Float, Html, Text, PresentationControls, OrbitControls, useGLTF, Stage } from '@react-three/drei'
 import { Perf } from 'r3f-perf'
 import { useControls } from 'leva'
 import * as THREE from 'three'
+import Computer from './components/Computer'
+
+
 // https://brandonkylely.github.io/practice-portfolio/
 function Scene() {
   // model imports
   const phone = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/iphone-x/model.gltf')
-  const computer = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf')
+  // const computer = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf')
+
+  // const { nodes, materials } = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf')
   // perf toggle
   const { perfVisible } = useControls('performance', {
     perfVisible: true
@@ -17,7 +22,7 @@ const { namePostion } = useControls('debug', {
 })
 
     return <>
-    <OrbitControls makeDefault/>
+    {/* <OrbitControls makeDefault/> */}
     { perfVisible && <Perf position="top-left" /> }
 
     <Stage
@@ -33,6 +38,15 @@ const { namePostion } = useControls('debug', {
         attenuation={5}
         anglePower={5} // Diffuse-cone anglePower (default: 5)
       /> */}
+  <Float rotationIntensity={ 0.6 } >  
+      <rectAreaLight
+          width={ 2.5 }
+          height={ 1.65 }
+          intensity={ 30 }
+          color={ '#0xffff' }
+          rotation={ [ - 0.1, Math.PI, 0 ] }
+          position={ [ 0, 0.55, - 1.15 ] }
+      />
       <mesh 
       position={[-3, -1, 0]}>
         <PresentationControls
@@ -66,20 +80,32 @@ const { namePostion } = useControls('debug', {
             </Text>
     </PresentationControls>
     </mesh>
-        <primitive 
+    </Float>
+    <Float rotationIntensity={ 0.3 } >  
+        {/* <primitive 
           object={computer.scene} 
           position={[0, -1, 0]}
           >
-            <Html
-              transform
-              wrapperClass="htmlScreen"
-              distanceFactor={ 1.17 }
-              position= {[0, 1.56, -1.4]}
-              rotation-x={ - 0.256 }
+          <Html
+          transform
+          wrapperClass="htmlScreen"
+          distanceFactor={ 1.17 }
+          position= {[0, 1.56, -1.4]}
+          rotation-x={ - 0.256 }
           >
-              <iframe src="https://brandonkylely.github.io/practice-portfolio/" />
+          <iframe src="https://brandonkylely.github.io/practice-portfolio/" />
           </Html>
-          </primitive>
+        </primitive> */}
+      {/* <mesh geometry={nodes.AppleLogo000.geometry} material={materials['AppleLogo.004']}/> */}
+      <Computer />
+      </Float>
+
+      <ContactShadows
+            position-y={ - 1 }
+            opacity={ 0.6 }
+            scale={ 5 }
+            blur={ 2.4 }
+        />
     </>
 }
 
