@@ -36,6 +36,7 @@ const {scenePosition} = useControls('Camera', {
     {/* <OrbitControls makeDefault/> */}
     { perfVisible && <Perf position="top-left" /> }
 
+
     <Stage
             shadows={ { type: 'contact', opacity: 0.2, blur: 3 } }
             environment="sunset"

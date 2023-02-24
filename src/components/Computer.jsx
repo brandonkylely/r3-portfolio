@@ -33,7 +33,7 @@ export default function Computer(props, htmlVisible) {
     useFrame((state, delta) => 
       {
           if (clicked && screenRef.current.rotation.x >= 1.31){
-              screenRef.current.rotation.x -= delta*0.8
+              screenRef.current.rotation.x -= delta*1.8
               console.log("running rotate")
             }
           if (screenRef.current.rotation.x < 1.32){
@@ -42,10 +42,11 @@ export default function Computer(props, htmlVisible) {
           }
         })
 
-    const [currentPage, setCurrentPage] = useState('off');
+    const [currentPage, setCurrentPage] = useState('noPage');
     const [clicked, setClicked] = useState(false);
     const [on, setOn] = useState(false);
     const [lightVisible, setLightVisible] = useState(false);
+    const [lightColor, setLightColor] = useState('#bcedf6');
 
 
     const handleClicked = () => setClicked(true)
@@ -129,22 +130,35 @@ scale={5.8} >
 <mesh geometry={nodes.Circle009_1.geometry} material={nodes.Circle009_1.material} />
 </group>
 </group>
+
         <Html
           transform
-          wrapperClass="htmlScreen"
-          // distanceFactor={ 1.15 }
+          // wrapperClass="absolute"
+          distanceFactor={ 1.15 }
           position= {[0, 1.52, -1.4]}
           rotation-x={ - 0.256 }
           >
+
           <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} on={on} />
           {/* <iframe src="https://brandonkylely.github.io/practice-portfolio/"/> */}
-          {renderPage()}
         </Html>
+
+        <Html
+          transform
+          // wrapperClass="absolute"
+          distanceFactor={ 1.15 }
+          position= {[0, 1.52, -1.39]}
+          rotation-x={ - 0.256 }
+        >
+          {renderPage()}
+
+        </Html>
+
         <rectAreaLight
             width={ 2.5 }
             height={ 1.65 }
             intensity={ 30 }
-            color={ '#bcedf6' }
+            color={ lightColor }
             rotation={ [ - 0.1, Math.PI, 0 ] }
             position={ [ 0, 0.55, - 1.15 ] }
             visible={lightVisible}
