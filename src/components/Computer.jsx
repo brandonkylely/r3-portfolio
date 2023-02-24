@@ -6,16 +6,21 @@ import React, { useRef, useState } from 'react'
 import { Html, Text, useGLTF} from '@react-three/drei'
 import {useControls} from 'leva'
 import {useThree, extend, useFrame} from '@react-three/fiber'
+import NavTabs from './NavTabs';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Projects from './pages/Projects';
 
 
 export default function Computer(props, htmlVisible) {
   const [hingeRotation, setHingeRotation] = useState(3.13);
   const screenRef = useRef()
   const { nodes, materials } = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf')
-  let clicked=false;
   function open() {
-    clicked=true;
-    console.log("running open")
+      // console.log(currentPage)
+      // handlePageChange('Home')
+      handleClicked()
+      console.log("running open")
   }
   //   [3.13, 0, 0,]
 //   const { screenRotation, logoRotation, logoPosition } = useControls('screen', {
@@ -26,11 +31,36 @@ export default function Computer(props, htmlVisible) {
 
     useFrame((state, delta) => 
       {
-          if (clicked && screenRef.current.rotation.x>=1.31){
+          if (clicked && screenRef.current.rotation.x >= 1.31){
               screenRef.current.rotation.x -= delta*0.8
               console.log("running rotate")
             }
+          if (screenRef.current.rotation.x < 1.33){
+            handleOn()
+          }
         })
+
+    const [currentPage, setCurrentPage] = useState('off');
+    const [clicked, setClicked] = useState(false);
+    const [on, setOn] = useState(false);
+
+    const handleClicked = () => setClicked(true)
+    const handleOn = () => setOn(true)
+
+        // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
+    const renderPage = () => {
+      if (currentPage === 'Projects') {
+        return <Projects />;
+      }
+      if (currentPage === 'About') {
+        return <About />;
+      }
+      if (currentPage === 'Contact') {
+        return <Contact />;
+      }
+    };
+  
+    const handlePageChange = (page) => setCurrentPage(page);
 
   return (
   <group {...props} dispose={null} position-y={-1}>
@@ -73,10 +103,10 @@ export default function Computer(props, htmlVisible) {
 <mesh geometry={nodes.Circle_2.geometry} material={materials.Touchbar} />
 </group>
 <group ref={screenRef} 
-// onClick={open} 
+onClick={open} 
 position={[0.01, -0.47, -10.41,]}
-// rotation-x={hingeRotation} 
-rotation={[1.31, 0, 0,]} 
+rotation-x={hingeRotation} 
+// rotation={[1.31, 0, 0,]} 
 scale={5.8} >
 <mesh geometry={nodes.Circle002.geometry} material={nodes.Circle002.material} />
 <mesh geometry={nodes.Circle002_1.geometry} material={materials.Screen} />
@@ -97,11 +127,13 @@ scale={5.8} >
         <Html
           transform
           wrapperClass="htmlScreen"
-          distanceFactor={ 1.15 }
+          // distanceFactor={ 1.15 }
           position= {[0, 1.52, -1.4]}
           rotation-x={ - 0.256 }
           >
-          <iframe src="https://brandonkylely.github.io/practice-portfolio/"/>
+          <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} on={on} />
+          {/* <iframe src="https://brandonkylely.github.io/practice-portfolio/"/> */}
+          {renderPage()}
         </Html>
 
 
