@@ -21,7 +21,9 @@ const { namePostion } = useControls('debug', {
   namePostion: [0, 1.5, -1.2]
 })
 
-    return <>
+
+    return (
+    <>
     {/* <OrbitControls makeDefault/> */}
     { perfVisible && <Perf position="top-left" /> }
 
@@ -39,14 +41,6 @@ const { namePostion } = useControls('debug', {
         anglePower={5} // Diffuse-cone anglePower (default: 5)
       /> */}
   <Float rotationIntensity={ 0.6 } >  
-      <rectAreaLight
-          width={ 2.5 }
-          height={ 1.65 }
-          intensity={ 30 }
-          color={ '#0xffff' }
-          rotation={ [ - 0.1, Math.PI, 0 ] }
-          position={ [ 0, 0.55, - 1.15 ] }
-      />
       <mesh 
       position={[-3, -1, 0]}>
         <PresentationControls
@@ -85,19 +79,40 @@ const { namePostion } = useControls('debug', {
         {/* <primitive 
           object={computer.scene} 
           position={[0, -1, 0]}
-          >
+          > */}
+        <PresentationControls
+            // global
+            // rotation={ [ 0.13, 0.1, 0 ] }
+            polar={ [ - 0.2, 0.2 ] }
+            azimuth={ [ - 1.5, 1.3 ] }
+            config={ { mass: 2, tension: 400 } }
+            snap={ { mass: 4, tension: 400 } }
+            center
+            >
+        {/* <mesh>
+          <rectAreaLight
+            width={ 2.5 }
+            height={ 1.65 }
+            intensity={ 30 }
+            color={ '#0xffff' }
+            rotation={ [ - 0.1, Math.PI, 0 ] }
+            position={ [ 0, 0.55, - 1.15 ] }
+
+          />
           <Html
-          transform
-          wrapperClass="htmlScreen"
-          distanceFactor={ 1.17 }
-          position= {[0, 1.56, -1.4]}
-          rotation-x={ - 0.256 }
+            transform
+            wrapperClass="htmlScreen"
+            distanceFactor={ 1.17 }
+            position= {[0, 0.52, -1.4]}
+            rotation-x={ - 0.256 }
+            
           >
           <iframe src="https://brandonkylely.github.io/practice-portfolio/" />
           </Html>
-        </primitive> */}
-      {/* <mesh geometry={nodes.AppleLogo000.geometry} material={materials['AppleLogo.004']}/> */}
+          </mesh> */}
+        {/* </primitive> */}
       <Computer />
+      </PresentationControls>
       </Float>
 
       <ContactShadows
@@ -107,6 +122,7 @@ const { namePostion } = useControls('debug', {
             blur={ 2.4 }
         />
     </>
+    )
 }
 
 export default Scene
