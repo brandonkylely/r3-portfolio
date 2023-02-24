@@ -1,4 +1,4 @@
-import { ContactShadows, Float, Html, Text, PresentationControls, OrbitControls, useGLTF, Stage } from '@react-three/drei'
+import { ContactShadows, Float, Html, Text, PresentationControls, OrbitControls, Sky, useGLTF, Stage } from '@react-three/drei'
 import { Perf } from 'r3f-perf'
 import { useControls } from 'leva'
 import * as THREE from 'three'
@@ -17,13 +17,22 @@ function Scene() {
     perfVisible: true
   })
 
-const { namePostion } = useControls('debug', {
-  namePostion: [0, 1.5, -1.2]
+// const { namePostion } = useControls('debug', {
+//   namePostion: [0, 1.5, -1.2]
+// })
+
+const {scenePosition} = useControls('Camera', {
+  scenePosition:     {
+    value: 0,
+    step: 0.01,
+    min: -2,
+    max: 2
+}
 })
 
-
     return (
-    <>
+    <mesh position-z={scenePosition}>
+    {/* <ambientLight intensity={0.5}/> */}
     {/* <OrbitControls makeDefault/> */}
     { perfVisible && <Perf position="top-left" /> }
 
@@ -31,7 +40,7 @@ const { namePostion } = useControls('debug', {
             shadows={ { type: 'contact', opacity: 0.2, blur: 3 } }
             environment="sunset"
             preset="portrait"
-            intensity={ 1 }
+            intensity={ 2 }
         />
 
     {/* <Spotlight
@@ -58,7 +67,7 @@ const { namePostion } = useControls('debug', {
           rotation={[-0.2, 0, 0]}
           />
             <Text
-              // font=""
+              font="/schoolbell-v18-latin-regular.woff"
               color={'black'}
               fontSize={ 0.1 }
               // position={ [ 0, 0, 0.03 ] }
@@ -68,7 +77,7 @@ const { namePostion } = useControls('debug', {
               textAlign= 'center'
             >
               "Hello World."
-              ~~~
+              ~~~~~
               Brandon Ly,
               Software Developer
             </Text>
@@ -121,7 +130,7 @@ const { namePostion } = useControls('debug', {
             scale={ 5 }
             blur={ 2.4 }
         />
-    </>
+    </mesh>
     )
 }
 

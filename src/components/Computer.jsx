@@ -18,11 +18,11 @@ export default function Computer(props, htmlVisible) {
     console.log("running open")
   }
   //   [3.13, 0, 0,]
-  const { screenRotation, logoRotation, logoPosition } = useControls('screen', {
-    screenRotation: [hingeRotation, 0, 0,],
-    logoRotation: [-Math.PI, 0, -Math.PI,],
-    logoPosition: [0, -0.112, -1.8,]
-  })
+//   const { screenRotation, logoRotation, logoPosition } = useControls('screen', {
+//     screenRotation: [hingeRotation, 0, 0,],
+//     logoRotation: [-Math.PI, 0, -Math.PI,],
+//     logoPosition: [0, -0.112, -1.8,]
+//   })
 
     useFrame((state, delta) => 
       {
@@ -34,7 +34,7 @@ export default function Computer(props, htmlVisible) {
 
   return (
   <group {...props} dispose={null} position-y={-1}>
-    <Text
+    {/* <Text
       // font=""
       color={'white'}
       fontSize={ 0.5 }
@@ -47,7 +47,7 @@ export default function Computer(props, htmlVisible) {
     visible={false}
     >
       open?
-    </Text>
+    </Text> */}
 <group position={[0, 0.52, 0,]} scale={[0.1, 0.1, 0.1,]} >
 <mesh geometry={nodes.Circle001.geometry} material={nodes.Circle001.material} />
 <mesh geometry={nodes.Circle001_1.geometry} material={nodes.Circle001_1.material} />
@@ -72,7 +72,12 @@ export default function Computer(props, htmlVisible) {
 <mesh geometry={nodes.Circle_1.geometry} material={materials.Key} />
 <mesh geometry={nodes.Circle_2.geometry} material={materials.Touchbar} />
 </group>
-<group ref={screenRef} onClick={open} position={[0.01, -0.47, -10.41,]} rotation={[hingeRotation, 0, 0,]} scale={5.8} >
+<group ref={screenRef} 
+// onClick={open} 
+position={[0.01, -0.47, -10.41,]}
+// rotation-x={hingeRotation} 
+rotation={[1.31, 0, 0,]} 
+scale={5.8} >
 <mesh geometry={nodes.Circle002.geometry} material={nodes.Circle002.material} />
 <mesh geometry={nodes.Circle002_1.geometry} material={materials.Screen} />
 <mesh geometry={nodes.Circle002_2.geometry} material={materials.ScreenGlass} />
@@ -89,17 +94,15 @@ export default function Computer(props, htmlVisible) {
 <mesh geometry={nodes.Circle009_1.geometry} material={nodes.Circle009_1.material} />
 </group>
 </group>
-      {/* {htmlVisible ? (
         <Html
           transform
           wrapperClass="htmlScreen"
-          distanceFactor={ 1.16 }
+          distanceFactor={ 1.15 }
           position= {[0, 1.52, -1.4]}
           rotation-x={ - 0.256 }
           >
           <iframe src="https://brandonkylely.github.io/practice-portfolio/"/>
         </Html>
-      )} */}
 
 
     </group>
