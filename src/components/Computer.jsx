@@ -16,6 +16,7 @@ export default function Computer(props, htmlVisible) {
   const [hingeRotation, setHingeRotation] = useState(3.13);
   const screenRef = useRef()
   const { nodes, materials } = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf')
+
   function open() {
       // console.log(currentPage)
       // handlePageChange('Home')
@@ -35,17 +36,21 @@ export default function Computer(props, htmlVisible) {
               screenRef.current.rotation.x -= delta*0.8
               console.log("running rotate")
             }
-          if (screenRef.current.rotation.x < 1.33){
+          if (screenRef.current.rotation.x < 1.32){
             handleOn()
+            handleSetLight()
           }
         })
 
     const [currentPage, setCurrentPage] = useState('off');
     const [clicked, setClicked] = useState(false);
     const [on, setOn] = useState(false);
+    const [lightVisible, setLightVisible] = useState(false);
+
 
     const handleClicked = () => setClicked(true)
     const handleOn = () => setOn(true)
+    const handleSetLight = () => setLightVisible(true)
 
         // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
     const renderPage = () => {
@@ -135,6 +140,15 @@ scale={5.8} >
           {/* <iframe src="https://brandonkylely.github.io/practice-portfolio/"/> */}
           {renderPage()}
         </Html>
+        <rectAreaLight
+            width={ 2.5 }
+            height={ 1.65 }
+            intensity={ 30 }
+            color={ '#bcedf6' }
+            rotation={ [ - 0.1, Math.PI, 0 ] }
+            position={ [ 0, 0.55, - 1.15 ] }
+            visible={lightVisible}
+          />
 
 
     </group>

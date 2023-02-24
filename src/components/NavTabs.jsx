@@ -5,7 +5,9 @@ export default function NavTabs({ currentPage, handlePageChange, on }) {
     return (
         <div>
     {on ? (
-        <ul className="nav nav-tabs">
+      <div>
+      <ul className="nav nav-tabs">
+
         <li className="nav-item">
           <a
             href="#home"
@@ -38,6 +40,7 @@ export default function NavTabs({ currentPage, handlePageChange, on }) {
           </a>
         </li>
       </ul>
+      </div>
     ) : (<div/>)}
     </div>
     );

@@ -98,15 +98,6 @@ const {scenePosition} = useControls('Camera', {
             snap={ { mass: 4, tension: 400 } }
             center
             >
-        <rectAreaLight
-            width={ 2.5 }
-            height={ 1.65 }
-            intensity={ 30 }
-            color={ 'orange' }
-            rotation={ [ - 0.1, Math.PI, 0 ] }
-            position={ [ 0, 0.55, - 1.15 ] }
-
-          />
         {/* <mesh>
 
           <Html
