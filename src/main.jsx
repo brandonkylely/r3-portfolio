@@ -5,7 +5,15 @@ import { Canvas } from '@react-three/fiber'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <Canvas>
+  <Canvas
+  camera={{
+    fov: 45,
+    near: 0.1,
+    far: 2000,
+    position: [ -0.5, 1.5, 4 ]
+    }}
+    >
+
     <Scene />
   </Canvas>
 )
