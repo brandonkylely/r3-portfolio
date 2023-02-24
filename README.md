@@ -12,6 +12,10 @@
 
   [Low Performance Site](#low-performance-site)
 
+  [Credits and Acknowledgements](#credits-and-acknowledgements)
+
+  [Contact Me](#contact-me)
+
   ## Description
 
   A portfolio using react and three js. Enjoy.
@@ -28,9 +32,11 @@
 
   This portfolio uses live 3d rendering. If your device cannot run it, here is the link to the static site.
 
-  ## Questions
+  ## Credits and Acknowledgements
 
-  Contact Me:
+  PMNDRS Market
+
+  ## Contact Me
 
   Github: https://github.com/brandonkylely
 
