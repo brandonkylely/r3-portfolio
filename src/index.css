@@ -17,23 +17,13 @@ canvas
     touch-action: none;
 }
 
-.navBar
-{
-    width: 1024px;
-    height: 40px;
-    border: none;
-    border-radius: 20px;
-    /* background: #bcedf6; */
-    background: red;
-}
-
 .lightScreen
 {
     width: 1024px;
     height: 670px;
     border: none;
     border-radius: 20px;
-    background: #bcedf6;
+    /* background: #bcedf6; */
     /* position: static; */
 }
 

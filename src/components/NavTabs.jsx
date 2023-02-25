@@ -18,11 +18,13 @@ export default function NavTabs({ currentPage, handlePageChange, on }) {
     return (
         <div>
     {on ? (
-      <div className='lightScreen'>
-      <nav>
-      <ul className="nav nav-tabs text-4xl grid-cols-3">
-
-        <li className="nav-item">
+      <div className='lightScreen bg-gradient-to-t from-green-400 to-blue-500'>
+      <nav className=''>
+      <ul className="row-reverse text-center gap-1 text-3xl grid grid-cols-9 px-2">
+      <li className="nav-item col-span-5 text-5xl text-left py-2 pl-1">
+            Brandon Ly's Portfolio
+        </li>
+        <li className="nav-item col-start-7 my-4 py-1.5 pr-2 border-2 border-black rounded-2xl">
           <a
             href="#projects"
             onClick={() => handlePageChange('Projects')}
@@ -31,7 +33,7 @@ export default function NavTabs({ currentPage, handlePageChange, on }) {
             Projects
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item my-4 py-1.5 pr-1 border-2 border-black rounded-2xl">
           <a
             href="#about"
             onClick={() => handlePageChange('About')}
@@ -40,7 +42,7 @@ export default function NavTabs({ currentPage, handlePageChange, on }) {
             About
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item my-4 py-1.5 pr-2 border-2 border-black rounded-2xl">
           <a
             href="#contact"
             onClick={() => handlePageChange('Contact')}
