@@ -14,7 +14,7 @@ function Scene() {
   // const { nodes, materials } = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf')
   // perf toggle
   const { perfVisible } = useControls('performance', {
-    perfVisible: true
+    perfVisible: false
   })
 
 // const { namePostion } = useControls('debug', {
@@ -23,7 +23,7 @@ function Scene() {
 
 const {Camera, SparkleEffect } = useControls('Scene', {
   Camera:     {
-    value: 2.5,
+    value: 0,
     step: 0.01,
     min: -1.5,
     max: 2.5
