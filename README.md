@@ -26,7 +26,7 @@
 
   ## Deployed Site
 
-  https://brandon-ly-portfolio.herokuapp.com/
+  https://brandonkylely.github.io/R3-Portfolio/
 
   ## Low Performance Site
 
