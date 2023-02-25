@@ -1,17 +1,30 @@
 [
     {
+        "id": "1",
         "name": "isGame-True",
         "image": "isgame-true.jpg",
-        "url": "https://github.com/brandonkylely/isGame-True"
+        "url": "https://github.com/brandonkylely/isGame-True",
+        "languages": "JS, Node, Express, Handlebars, SQL, Phaser"
     },
     {
+        "id": "2",
         "name": "Project 2",
         "image": "isgame-true.jpg",
-        "url": "https://github.com/brandonkylely/isGame-True"
+        "url": "https://github.com/brandonkylely/isGame-True",
+        "languages": "JS, Node, Express, Handlebars, SQL, Phaser"
     },
     {
+        "id": "3",
         "name": "Project 3",
         "image": "isgame-true.jpg",
-        "url": "https://github.com/brandonkylely/isGame-True"
+        "url": "https://github.com/brandonkylely/isGame-True",
+        "languages": "JS, Node, Express, Handlebars, SQL, Phaser"
+    },
+    {
+        "id": "4",
+        "name": "Project 3",
+        "image": "isgame-true.jpg",
+        "url": "https://github.com/brandonkylely/isGame-True",
+        "languages": "JS, Node, Express, Handlebars, SQL, Phaser"
     }
 ]

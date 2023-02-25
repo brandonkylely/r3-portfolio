@@ -3,12 +3,20 @@ import projectData from './projects/projects.json'
 // opacity-0 bg-black
 export default function Projects({}) {
     return (
-        <div className='text-xl grid grid-cols-3'>
+        <div className='mb-18 text-xl grid grid-cols-3'>
+            <header className='absolute text-3xl ml-10 -mt-14'>Projects
+            <div className='w-80 -mt-4'>━━━━━━━━━━━━━━━━━━━━━━</div>
+            </header>
+
         {projectData.map(project => {
             return (
-                <div className='w-40 h-20 border-2 border-black rounded-2xl bg-no-repeat bg-center bg-origin-padding hover:bg-opacity-80' style={{ backgroundImage: `url(${project.image})`, backgroundSize: 'contain'}}> 
-                    {/* <img className='hover:bg-black ' src={project.image} alt={project.name} /> */}
-                    {/* <h3 className='bg-opacity-20 bg-black absolute bottom-20 ml-12 border-2 border-black rounded-2xl'>{project.name}</h3> */}
+                <div className='' id={project.id}>
+                <a className=' absolute w-56 h-32 mx-10 border-1 border-black rounded-3xl bg-black bg-opacity-0 text-opacity-0 z-10 hover:bg-opacity-50 hover:text-opacity-80 text-center py-10 text-white' href={project.url} target='_blank'> 
+                    {project.name} 
+                </a>
+                    <div className='z-0 w-56 h-32 mx-10 border-1 border-black rounded-3xl bg-no-repeat bg-center overflow-hidden bg-auto' style={{ backgroundImage: `url(${project.image})`}}> 
+                    </div>
+                <div className='text-center w-56 mx-10 mb-4'>{project.languages}</div>
                 </div>
             )
         })}
