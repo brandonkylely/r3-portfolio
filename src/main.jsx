@@ -10,7 +10,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     fov: 45,
     near: 0.1,
     far: 2000,
-    position: [ -0.5, 1.5, 3.6 ]
+    position: [ -0.5, 1.7, 3.2 ]
     }}
     >
 

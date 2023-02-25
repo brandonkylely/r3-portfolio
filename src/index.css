@@ -30,3 +30,8 @@ canvas
 .wrapper{
     background: #ffffff;
 }
+
+.schoolbellFont{
+    font-family: 'custom';
+    src:url(schoolbell-v18-latin-regular.woff)format("woff")
+}
