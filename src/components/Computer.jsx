@@ -145,7 +145,7 @@ scale={5.8} >
 
         <Html
           transform
-          // wrapperClass="absolute"
+          // wrapperClass="fitScreen"
           distanceFactor={ 1.15 }
           position= {[0, 1.52, -1.39]}
           rotation-x={ - 0.256 }

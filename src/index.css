@@ -27,6 +27,14 @@ canvas
     /* position: static; */
 }
 
+.overlayScreen
+{
+    width: 1024px;
+    height: 500px;
+    border: none;
+    border-radius: 20px;
+}
+
 .wrapper{
     background: #ffffff;
 }
