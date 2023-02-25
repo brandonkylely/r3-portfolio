@@ -8,8 +8,8 @@ export default function About({}) {
             my resume
             <br />
             ━━━━━━━━━━━━━
-            <p className='mr-36'>
-            <a href="brandon-resume.pdf" target="_blank" className='text-2xl'>PDF</a>
+            <p className='mr-32'>
+            <a href="brandon-resume.pdf" target="_blank" className='text-2xl'>━ PDF</a>
             </p>
         </div>
         <div className='font-bold text-3xl mt-12 col-start-2'>
