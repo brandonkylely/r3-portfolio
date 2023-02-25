@@ -22,15 +22,15 @@
 
   ## Technologies Used
 
-  React, Three, React-Three Fiber, React-Three Drei, Blender, BlenderKit, Leva, R3F-Perf, Javascript, Node, Express, Vite, HTML, CSS, TailwindCSS
+  React, Three, React-Three Fiber, React-Three Drei, Leva, R3F-Perf, Javascript, Node, Express, Vite, HTML, CSS, TailwindCSS, HeroTofu
 
   ## Deployed Site
 
-  not yet deployed
+  https://brandon-ly-portfolio.herokuapp.com/
 
   ## Low Performance Site
 
-  This portfolio uses live 3d rendering. If your device cannot run it, here is the link to the static site.
+  This portfolio uses live 3d rendering. If your device cannot run it, here is the link to the static site. In Progress
 
   ## Credits and Acknowledgements
 
