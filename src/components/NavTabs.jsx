@@ -27,29 +27,29 @@ export default function NavTabs({ currentPage, handlePageChange, on }) {
       <li className="font-mono font-bold nav-item col-span-6 text-4xl text-left py-2 pl-1">
             Brandon Ly's Portfolio
         </li>
-        <li className="font-mono col-start-7 my-4 py-1.5 border-2 border-black rounded-2xl">
+        <li className="font-mono col-start-7 mt-4">
           <a
             href="#projects"
             onClick={() => handlePageChange('Projects')}
-            className={currentPage === 'Projects' ? 'bg-black bg-opacity-50 bg-cover overflow-hidden text-white my-4 py-2 pr-0.5 border-1 border-black rounded-2xl' : 'bg-black bg-opacity-70 bg-cover overflow-hidden text-white my-4 py-2 pr-0.5 border-1 border-black rounded-2xl'}
+            className={currentPage === 'Projects' ? 'bg-black bg-opacity-50 bg-cover overflow-hidden text-white py-2 border-2 border-black rounded-2xl hover:border-gray-400' : 'bg-black bg-opacity-70 bg-cover overflow-hidden text-white py-2 border-2 border-black rounded-2xl hover:border-gray-400'}
             >
             Projects
           </a>
         </li>
-        <li className="font-mono my-4 py-1.5 border-2 border-black rounded-2xl">
+        <li className="font-mono mt-4">
           <a
             href="#about"
             onClick={() => handlePageChange('About')}
-            className={currentPage === 'About' ? 'bg-black bg-opacity-50 bg-cover overflow-hidden text-white my-4 py-2 pl-6 pr-4 border-1 border-black rounded-2xl' : 'bg-black bg-opacity-70 bg-cover overflow-hidden text-white my-4 py-2 pl-6 pr-4 border-1 border-black rounded-2xl'}
+            className={currentPage === 'About' ? 'px-4 bg-black bg-opacity-50 bg-cover overflow-hidden text-white py-2 border-2 border-black rounded-2xl hover:border-gray-400' : 'px-4 bg-black bg-opacity-70 bg-cover overflow-hidden text-white py-2 border-2 border-black rounded-2xl hover:border-gray-400'}
             >
             About
           </a>
         </li>
-        <li className="font-mono my-4 py-1.5 border-2 border-black rounded-2xl">
+        <li className="font-mono mt-4">
           <a
             href="#contact"
             onClick={() => handlePageChange('Contact')}
-            className={currentPage === 'Contact' ? 'bg-black bg-opacity-50 bg-cover overflow-hidden text-white my-4 py-2 pl-2 pr-1.5 border-1 border-black rounded-2xl' : 'bg-black bg-opacity-70 bg-cover overflow-hidden text-white my-4 py-2 pl-2 pr-1.5 border-1 border-black rounded-2xl'}
+            className={currentPage === 'Contact' ? 'px-2 bg-black bg-opacity-50 bg-cover overflow-hidden text-white py-2 border-2 border-black rounded-2xl hover:border-gray-400' : 'px-2 bg-black bg-opacity-70 bg-cover overflow-hidden text-white py-2 border-2 border-black rounded-2xl hover:border-gray-400'}
             >
             Contact
           </a>
