@@ -18,7 +18,10 @@ export default function NavTabs({ currentPage, handlePageChange, on }) {
     return (
         <div>
     {on ? (
-      <div className='lightScreen bg-gradient-to-t from-green-400 to-blue-500'>
+      <div 
+      // className='lightScreen bg-gradient-to-t from-green-400 to-blue-500'
+      className={currentPage === 'Contact' ? 'lightScreen bg-gradient-to-t from-red-400 to-blue-500' : currentPage === 'About' ? 'lightScreen bg-gradient-to-t from-purple-400 to-blue-500' : 'lightScreen bg-gradient-to-t from-green-400 to-blue-500'}
+      >
       <nav className=''>
       <ul className="text-center gap-1 text-2xl grid grid-cols-9 px-2">
       <li className="font-mono font-bold nav-item col-span-6 text-4xl text-left py-2 pl-1">

@@ -10,7 +10,7 @@ export default function Projects({}) {
 
         {projectData.map(project => {
             return (
-                <div className='' id={project.id}>
+                <div className='' key={project.key}>
                 <a className=' absolute w-56 h-32 mx-10 border-1 border-black rounded-3xl bg-black bg-opacity-0 text-opacity-0 z-10 hover:bg-opacity-50 hover:text-opacity-80 text-center py-10 text-white' href={project.url} target='_blank'> 
                     {project.name} 
                 </a>

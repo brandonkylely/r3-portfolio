@@ -10,14 +10,14 @@ export default function About({}) {
             <br />
             ━━━━━━━━━━━━━━━━━━━━━
             </div>
-            <p className='mr-20'>
+            <div className='mr-20'>
             <p className='text-xl'>━B.S. in Biochemistry, UCLA <span className='italic text-base'>2016-2020</span></p>
             <p className='text-xl'>━Fullstack/Flex Coding, 
             <br />
             UCI Bootcamp <span className='italic text-base'>2022-2023</span></p>
             <br />
             <a href="brandon-resume.pdf" target="_blank" className='text-2xl'>Click here to see my resume!</a>
-            </p>
+            </div>
         </div>
         <div className='font-bold text-3xl mt-12 col-start-2'>
             about...

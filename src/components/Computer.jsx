@@ -46,12 +46,14 @@ export default function Computer(props, htmlVisible) {
     const [clicked, setClicked] = useState(false);
     const [on, setOn] = useState(false);
     const [lightVisible, setLightVisible] = useState(false);
-    const [lightColor, setLightColor] = useState('#bcedf6');
+    // const [lightColor, setLightColor] = useState('#FA5F55');
 
 
     const handleClicked = () => setClicked(true)
     const handleOn = () => setOn(true)
     const handleSetLight = () => setLightVisible(true)
+    // const handleSetLightColor = (color) => setLightColor(color)
+
 
         // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
     const renderPage = () => {
@@ -158,7 +160,7 @@ scale={5.8} >
             width={ 2.5 }
             height={ 1.65 }
             intensity={ 30 }
-            color={ lightColor }
+            color={ currentPage === 'About' ? '#B042FF' : currentPage === "Contact" ? '#FA5F55' : '#bcedf6'}
             rotation={ [ - 0.1, Math.PI, 0 ] }
             position={ [ 0, 0.55, - 1.15 ] }
             visible={lightVisible}
