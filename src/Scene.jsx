@@ -90,7 +90,14 @@ const {Camera, SparkleEffect } = useControls('Scene', {
               Brandon Ly,
               Software Developer
             </Text>
+
     </PresentationControls>
+    {/* <Shadow
+              color="black"
+              colorStop={0}
+              opacity={0.5}
+              position={[0.1, -1, 0.1]}
+              /> */}
     </mesh>
     </Float>
     <Float rotationIntensity={ 0.3 } >  
