@@ -1,4 +1,4 @@
-import { Sparkles, ContactShadows, Float, Html, Text, PresentationControls, OrbitControls, Sky, useGLTF, Stage } from '@react-three/drei'
+import { Sparkles, Shadow, ContactShadows, Float, Html, Text, PresentationControls, OrbitControls, Sky, useGLTF, Stage } from '@react-three/drei'
 import { Perf } from 'r3f-perf'
 import { useControls } from 'leva'
 import * as THREE from 'three'
@@ -32,7 +32,7 @@ const {Camera, SparkleEffect } = useControls('Scene', {
 })
 
     return (
-    <mesh position-z={0}>
+    <mesh position-z={Camera}>
     {/* <ambientLight intensity={0.5}/> */}
     {/* <OrbitControls makeDefault/> */}
     { perfVisible && <Perf position="top-left" /> }
@@ -126,7 +126,7 @@ const {Camera, SparkleEffect } = useControls('Scene', {
       </Float>
 
       <ContactShadows
-            position-y={ - 1 }
+            position-y={ - 1.5 }
             opacity={ 0.6 }
             scale={ 5 }
             blur={ 2.4 }
