@@ -10,6 +10,7 @@ import NavTabs from './NavTabs';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
+import Welcome from './pages/Welcome';
 
 
 export default function Computer(props, htmlVisible) {
@@ -66,6 +67,7 @@ export default function Computer(props, htmlVisible) {
       if (currentPage === 'Contact') {
         return <Contact />;
       }
+      return <Welcome />
     };
   
     const handlePageChange = (page) => setCurrentPage(page);
@@ -152,7 +154,7 @@ scale={5.8} >
           position= {[0, 1.52, -1.39]}
           rotation-x={ - 0.256 }
         >
-          {renderPage()}
+          {on ? renderPage() : ''}
 
         </Html>
 
@@ -160,7 +162,7 @@ scale={5.8} >
             width={ 2.5 }
             height={ 1.65 }
             intensity={ 30 }
-            color={ currentPage === 'About' ? '#B042FF' : currentPage === "Contact" ? '#FA5F55' : '#bcedf6'}
+            color={ currentPage === 'About' ? '#B042FF' : currentPage === "Contact" ? '#FA5F55' : '#22E4AC'}
             rotation={ [ - 0.1, Math.PI, 0 ] }
             position={ [ 0, 0.55, - 1.15 ] }
             visible={lightVisible}

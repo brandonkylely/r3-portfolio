@@ -43,3 +43,7 @@ canvas
     font-family: 'custom';
     src:url(schoolbell-v18-latin-regular.woff)format("woff")
 }
+
+.mt-57vh{
+    margin-top: 57vh;
+}
