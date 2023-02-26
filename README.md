@@ -26,7 +26,7 @@
 
   ## Deployed Site
 
-  https://brandonkylely.github.io/R3-Portfolio/
+  https://brandonkylely.github.io/r3-portfolio/
 
   ## Low Performance Site
 
