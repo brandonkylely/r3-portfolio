@@ -41,7 +41,7 @@ canvas
 
 @font-face{
     font-family: custom;
-    src: url('schoolbell-v18-latin-regular.woff')
+    src: url('./assets/schoolbell-v18-latin-regular.woff')
 }
 
 .schoolbellFont{
