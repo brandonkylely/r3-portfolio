@@ -39,9 +39,13 @@ canvas
     background: #ffffff;
 }
 
+@font-face{
+    font-family: custom;
+    src: url('schoolbell-v18-latin-regular.woff')
+}
+
 .schoolbellFont{
-    font-family: 'custom';
-    src:url(schoolbell-v18-latin-regular.woff)format("woff")
+    font-family: custom;
 }
 
 .mt-545px{

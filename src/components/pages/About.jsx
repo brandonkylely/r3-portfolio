@@ -6,7 +6,7 @@ export default function About({}) {
         <div className='flex justify-center items-end flex-col font-bold text-3xl mt-16 mr-10'>
             <div style={{ backgroundImage: 'url(profile-picture1.jpg)'}} className='mr-40 overflow-hidden bg-cover border-2 border-black rounded-full w-48 h-48 text-right'></div>
             <div className='mr-28 text-right'>
-                details
+                details...
             <br />
             ━━━━━━━━━━━━━━━━━━━━━
             </div>

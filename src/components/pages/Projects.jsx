@@ -4,7 +4,7 @@ import projectData from './projects/projects.json'
 export default function Projects({}) {
     return (
         <div className='font-mono mt-20 text-lg font-bold grid grid-cols-3'>
-            <header className='absolute text-3xl ml-10 -mt-14'>Projects
+            <header className='absolute text-3xl ml-10 -mt-14'>projects...
             <div className='w-80 -mt-4'>━━━━━━━━━━━━━━━━━━━━━━</div>
             </header>
 
