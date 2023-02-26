@@ -57,7 +57,7 @@ export default function NavTabs({ currentPage, handlePageChange, on }) {
       </ul>
       </nav>
 
-      <img src='taskbar.jpg' alt='' className='mt-96 w-10/12 mx-auto mt-57vh bottom-0 rounded-t-lg'/>
+      {/* <img src='taskbar.jpg' alt='' className='mt-96 w-10/12 mx-auto mt-545px bottom-0 rounded-t-lg'/> */}
       </div>
 
     ) : (<div/>)}
