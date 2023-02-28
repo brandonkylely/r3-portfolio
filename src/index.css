@@ -1,4 +1,5 @@
 @import url('https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap');
 
 html,
 body,
@@ -40,12 +41,12 @@ canvas
 }
 
 @font-face{
-    font-family: custom;
-    src: url('./assets/schoolbell-v18-latin-regular.woff')
+    font-family: 'Klee One', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap')
 }
 
 .schoolbellFont{
-    font-family: custom;
+    font-family: 'Klee One', cursive;
 }
 
 .mt-545px{

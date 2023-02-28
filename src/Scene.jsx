@@ -76,7 +76,7 @@ const {Camera, SparkleEffect } = useControls('Scene', {
           rotation={[-0.2, 0, 0]}
           />
             <Text
-              font="./assets/schoolbell-v18-latin-regular.woff"
+              font="./schoolbell-v18-latin-regular.woff"
               color={'black'}
               fontSize={ 0.1 }
               // position={ [ 0, 0, 0.03 ] }
