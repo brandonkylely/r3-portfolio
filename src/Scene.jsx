@@ -22,13 +22,13 @@ function Scene() {
 // })
 
 const {Camera, SparkleEffect } = useControls('Scene', {
-//   Camera:     {
-//     value: 0,
-//     step: 0.01,
-//     min: -1.5,
-//     max: 2.5
-// },
-  SparkleEffect: true
+  Camera: {
+    value: 0,
+    step: 0.01,
+    min: -1.5,
+    max: 2.5
+},
+  SparkleEffect: false
 })
 
     return (

@@ -4,35 +4,42 @@
         "name": "Portfolio",
         "image": "r3-portfolio.jpg",
         "url": "https://github.com/brandonkylely/r3-portfolio",
-        "languages": "React, Node, Express, Three, Vite, Tailwind"
+        "languages": "React, Node, Express, Three, Vite, Tailwind, GH-Pages"
     },
     {
         "key": "1",
         "name": "isGame-True",
         "image": "isgame-true.jpg",
         "url": "https://github.com/brandonkylely/isGame-True",
-        "languages": "JS, Node, Express, Hbs, SQL, Phaser"
+        "languages": "JS, Node, Express, Hbs, SQL, Sequelize ORM, Phaser, Heroku"
     },
     {
         "key": "2",
         "name": "duck blog",
         "image": "duck-blog.jpg",
         "url": "https://github.com/brandonkylely/duck-blog",
-        "languages": "JS, Node, Express, Hbs, SQL, Tailwind"
+        "languages": "JS, Node, Express, Hbs, SQL, Tailwind, Heroku"
     },
     {
         "key": "3",
         "name": "Urban Info",
         "image": "urban-info.jpg",
         "url": "https://github.com/brandonkylely/urban-info",
-        "languages": "JS, HTML, CSS/Bootstrap, Teleport API"
+        "languages": "JS, HTML, CSS/Bootstrap, Teleport API, GH-Pages"
     },
     {
         "key": "5",
         "name": "Social Network Api",
         "image": "social-network-api.jpg",
         "url": "https://github.com/brandonkylely/social-network-api",
-        "languages": "JS, Node, Express, Mongo/Mongoose"
-    }
+        "languages": "JS, Node, Express, Mongo, Mongoose ODM"
+    },
+    {
+      "key": "6",
+      "name": "Anaxi",
+      "image": "anaxi.jpg",
+      "url": "https://github.com/brandonkylely/Anaxi-Mapper",
+      "languages": "Typescript, MERN, Vite, Three, Tailwind, Google Maps Platform, Heroku"
+  }
 
 ]
