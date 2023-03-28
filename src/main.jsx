@@ -13,7 +13,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     position: [ -0.5, 1.7, 3.2 ]
     }}
     >
-
     <Scene />
   </Canvas>
 )

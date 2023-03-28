@@ -10,7 +10,9 @@ body,
     left: 0;
     width: 100%;
     height: 100%;
-    background: #320e3b;
+    background-color: aliceblue;
+    /* background-image: url('./rugged.texture.avif');
+    background-size: cover; */
 }
 
 canvas
