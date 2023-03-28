@@ -21,14 +21,14 @@ function Scene() {
 //   namePostion: [0, 1.5, -1.2]
 // })
 
-const {Camera, SparkleEffect, Phone } = useControls('Scene', {
+const {Camera, Phone } = useControls('Scene', {
   Camera: {
     value: 0,
     step: 0.01,
     min: -1.5,
     max: 2.5
 },
-  SparkleEffect: false,
+  // SparkleEffect: false,
   Phone: false
 })
 
@@ -71,7 +71,8 @@ const {Camera, SparkleEffect, Phone } = useControls('Scene', {
             position-x={0.1}
             position-y={0.7}
             // noise={[1, 1, 1]}
-            visible={SparkleEffect}
+            // visible={SparkleEffect}
+            visible={false}
           />
         <primitive 
           object={phone.scene} 
