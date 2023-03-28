@@ -21,14 +21,15 @@ function Scene() {
 //   namePostion: [0, 1.5, -1.2]
 // })
 
-const {Camera, SparkleEffect } = useControls('Scene', {
+const {Camera, SparkleEffect, Phone } = useControls('Scene', {
   Camera: {
     value: 0,
     step: 0.01,
     min: -1.5,
     max: 2.5
 },
-  SparkleEffect: false
+  SparkleEffect: false,
+  Phone: false
 })
 
     return (
@@ -51,7 +52,9 @@ const {Camera, SparkleEffect } = useControls('Scene', {
         attenuation={5}
         anglePower={5} // Diffuse-cone anglePower (default: 5)
       /> */}
-  <Float rotationIntensity={ 0.6 } >  
+
+  <Float rotationIntensity={ 0.6 }
+  visible={Phone} >  
       <mesh 
       position={[-3, -1, 0]}>
         <PresentationControls
@@ -92,6 +95,7 @@ const {Camera, SparkleEffect } = useControls('Scene', {
             </Text>
 
     </PresentationControls>
+
     {/* <Shadow
               color="black"
               colorStop={0}
