@@ -13,8 +13,8 @@ function Scene() {
 
   // const { nodes, materials } = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf')
   // perf toggle
-  const { perfVisible } = useControls('Performance', {
-    perfVisible: false
+  const { Performance } = useControls('Performance', {
+    Performance: false
   })
 
 // const { namePostion } = useControls('debug', {
@@ -36,7 +36,7 @@ const {Camera, Phone } = useControls('Scene', {
     <mesh position-z={Camera}>
     {/* <ambientLight intensity={0.5}/> */}
     {/* <OrbitControls makeDefault/> */}
-    { perfVisible && <Perf position="top-left" /> }
+    { Performance && <Perf position="top-left" /> }
 
 
     <Stage

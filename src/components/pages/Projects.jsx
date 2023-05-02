@@ -11,9 +11,14 @@ export default function Projects({}) {
         {projectData.map(project => {
             return (
                 <div className='' key={project.key}>
-                <a className=' absolute w-56 h-32 mx-10 border-1 border-black rounded-3xl bg-black bg-opacity-0 text-opacity-0 z-10 hover:bg-opacity-50 hover:text-opacity-80 text-center py-12 text-white' href={project.url} target='_blank'> 
+
+                <div className='absolute font-bold text-lg w-56 h-32 mx-10 border-1 border-black rounded-3xl bg-black bg-opacity-0 text-opacity-0 z-10 hover:bg-opacity-50 hover:text-opacity-80 text-center py-12 text-white'> 
                     {project.name} 
-                </a>
+                    <br />
+                    <div className='flex justify-around z-20 text-2xl'>
+                      {project.url && <a href={project.url} target='_blank'><i class="fa-solid fa-location-arrow"></i></a>} <a href={project.github} target='_blank'><i className="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
                     <div className='z-0 w-56 h-32 mx-10 border-1 border-black rounded-3xl bg-no-repeat bg-center overflow-hidden bg-auto' style={{ backgroundImage: `url(${project.image})`}}> 
                     </div>
                 <div className='text-center w-56 mx-10 mb-4'>{project.languages}</div>
