@@ -9,7 +9,7 @@ import Computer from './components/Computer'
 function Scene() {
   // model imports
   const phone = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/iphone-x/model.gltf')
-  // const computer = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf')
+  const computer = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf')
 
   // const { nodes, materials } = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf')
   // perf toggle
@@ -34,17 +34,17 @@ const {Camera, Phone } = useControls('Scene', {
 
     return (
     <mesh position-z={Camera}>
-    {/* <ambientLight intensity={0.5}/> */}
+    <ambientLight intensity={0.5}/>
     {/* <OrbitControls makeDefault/> */}
     { Performance && <Perf position="top-left" /> }
 
 
-    <Stage
+    {/* <Stage
             shadows={ { type: 'contact', opacity: 0.2, blur: 3 } }
-            environment="sunset"
+            environment="city"
             preset="portrait"
             intensity={ 2 }
-        />
+        /> */}
 
     {/* <Spotlight
        distance={5}

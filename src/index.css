@@ -10,7 +10,7 @@ body,
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: aliceblue;
+    background-color: rgb(160, 210, 255);
     /* background-image: url('./rugged.texture.avif');
     background-size: cover; */
 }
