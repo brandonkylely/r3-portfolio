@@ -19,21 +19,21 @@ export default function About({}) {
             target="_blank"
             className=""
           >
-            <i class="fa-brands fa-github"></i>
+            <i className="fa-brands fa-github"></i>
           </a>
           <a
             href="https://www.linkedin.com/in/brandon-ly-7300b1205/"
             target="_blank"
             className="mx-12"
           >
-            <i class="fa-brands fa-linkedin"></i>
+            <i className="fa-brands fa-linkedin"></i>
           </a>
           <a
             href="https://twitter.com/brandonkylely"
             target="_blank"
             className=""
           >
-            <i class="fa-brands fa-twitter"></i>
+            <i className="fa-brands fa-twitter"></i>
           </a>
           <br />
 
@@ -42,7 +42,7 @@ export default function About({}) {
             target="_blank"
             className="text-3xl"
           >
-            Resume <i class="fa-solid fa-location-arrow"></i>
+            Resume <i className="fa-solid fa-location-arrow"></i>
           </a>
         </div>
       </div>

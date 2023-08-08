@@ -54,3 +54,9 @@ canvas {
 .w-600px {
   width: 600px;
 }
+
+@media (min-width: 1280px) {
+  .w-900px {
+    width: 900px;
+  }
+}
