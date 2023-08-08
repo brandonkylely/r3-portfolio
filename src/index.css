@@ -1,60 +1,56 @@
-@import url('https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap');
+@import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap");
 
 html,
 body,
-#root
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(160, 210, 255);
-    /* background-image: url('./rugged.texture.avif');
+#root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(160, 210, 255);
+  /* background-image: url('./rugged.texture.avif');
     background-size: cover; */
 }
 
-canvas
-{
-    touch-action: none;
+canvas {
+  touch-action: none;
 }
 
-.lightScreen
-{
-    width: 1024px;
-    height: 670px;
-    border: none;
-    border-radius: 20px;
-    /* background: #bcedf6; */
-    /* position: static; */
+.lightScreen {
+  width: 1024px;
+  height: 670px;
+  border: none;
+  border-radius: 20px;
+  /* background: #bcedf6; */
+  /* position: static; */
 }
 
-.overlayScreen
-{
-    width: 1024px;
-    height: 500px;
-    border: none;
-    border-radius: 20px;
+.overlayScreen {
+  width: 1024px;
+  height: 500px;
+  border: none;
+  border-radius: 20px;
 }
 
-.wrapper{
-    background: #ffffff;
+.wrapper {
+  background: #ffffff;
 }
 
-@font-face{
-    font-family: 'Klee One', cursive;
-    src: url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap')
+@font-face {
+  font-family: "Klee One", cursive;
+  src: url("https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap");
 }
 
-.schoolbellFont{
-    font-family: 'Klee One', cursive;
+.schoolbellFont {
+  font-family: "Klee One", cursive;
 }
 
-.mt-545px{
-    margin-top: 545px;
+.mt-545px {
+  margin-top: 545px;
 }
 
-.w-600px{
+.w-600px {
   width: 600px;
 }

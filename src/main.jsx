@@ -14,8 +14,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       position: [-0.5, 2.1, 4.1],
     }}
   >
-  <Suspense fallback={<Loading />}> 
-    <Scene />
-  </Suspense>
+    <Suspense fallback={<Loading />}>
+      <Scene />
+    </Suspense>
   </Canvas>
 );
