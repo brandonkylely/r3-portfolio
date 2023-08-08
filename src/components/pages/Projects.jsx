@@ -3,7 +3,7 @@ import projectData from './projects/projects.json'
 // opacity-0 bg-black
 export default function Projects({}) {
     return (
-        <div className='font-mono mt-20 w-300px text-lg font-bold grid md:grid-cols-3 grid-cols-2'>
+        <div className='font-mono mt-20 w-600px text-lg font-bold grid md:grid-cols-3 grid-cols-2'>
             <header className='absolute text-3xl md:ml-10 -ml-10 -mt-14'>projects...
             <div className='w-80 -mt-4 invisible md:visible'>━━━━━━━━━━━━━━━━━━━━━━</div>
             </header>
