@@ -30,7 +30,7 @@ export default function NavTabs({ currentPage, handlePageChange, on }) {
         >
           <nav className="">
             <ul className="text-center gap-1 text-2xl grid grid-cols-12">
-              <li className="schoolbellFont font-bold text-blue-900 nav-item col-span-6 text-3xl text-left py-4 pl-3">
+              <li className="itimFont font-bold text-blue-900 nav-item col-span-6 text-3xl text-left py-4 pl-3">
                 Brandon Ly: Software Engineer
               </li>
               <li className="itimFont col-start-7 col-span-2 mt-4">

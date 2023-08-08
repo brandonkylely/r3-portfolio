@@ -46,7 +46,7 @@ export default function About({}) {
           </a>
         </div>
       </div>
-      <div className="font-bold text-3xl mt-12 col-start-2 schoolbellFont">
+      <div className="font-bold text-3xl mt-12 col-start-2 itimFont">
         About Me
         <br />
         ━━━━

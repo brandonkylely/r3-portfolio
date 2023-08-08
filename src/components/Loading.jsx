@@ -2,5 +2,5 @@ import { useProgress, Html } from "@react-three/drei";
 
 export default function Loading() {
   const { active, progress, errors, item, loaded, total } = useProgress();
-  return <Html wrapperClass ="schoolbellFont" center>{Math.round(progress)} % Loaded</Html>;
+  return <Html wrapperClass ="itimFont" center>{Math.round(progress)} % Loaded</Html>;
 }
