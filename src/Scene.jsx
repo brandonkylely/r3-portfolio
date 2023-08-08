@@ -48,21 +48,6 @@ function Scene() {
   //   Phone: false
   // })
 
-  /*
-   * Mobile detection
-   **/
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    window.screen.width <= 760 ? setIsMobile(true) : setIsMobile(false);
-  }, [window.screen.width]);
-
-  function detectWindowSize() {
-    window.innerWidth <= 760 ? setIsMobile(true) : setIsMobile(false);
-  }
-
-  window.onresize = detectWindowSize;
-
   return (
     <mesh position-z={0}>
       <ambientLight intensity={0.5} />
