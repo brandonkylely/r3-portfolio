@@ -6,7 +6,7 @@
 
 https://brandonkylely.github.io/r3-portfolio/
 
-![Brandon's Portfolio](/public/assets/three-portfolio.jpg)
+![Brandon's Portfolio](/public/r3-portfolio.jpg)
 
 ## Table of Contents
 
