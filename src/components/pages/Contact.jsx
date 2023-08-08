@@ -13,8 +13,8 @@ export default function Contact({}) {
     if (submitted) {
       return (
         <>
-          <div className="text-2xl">Email sent...</div>
-          <div className="text-md">and email received...</div>
+          <div className="text-2xl">Email sent!</div>
+          <div className="text-md">I'll get back to you shortly!</div>
         </>
       );
     }
