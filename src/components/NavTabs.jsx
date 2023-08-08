@@ -29,11 +29,11 @@ export default function NavTabs({ currentPage, handlePageChange, on }) {
           }
         >
           <nav className="">
-            <ul className="text-center gap-1 text-2xl grid grid-cols-9 px-2">
-              <li className="schoolbellFont font-bold text-blue-900 nav-item col-span-6 text-5xl text-left py-4 pl-3">
-                brandon ly's portfolio
+            <ul className="text-center gap-1 text-2xl grid grid-cols-12">
+              <li className="schoolbellFont font-bold text-blue-900 nav-item col-span-6 text-3xl text-left py-4 pl-3">
+                Brandon Ly: Software Engineer
               </li>
-              <li className="font-mono col-start-7 mt-4">
+              <li className="font-mono col-start-7 col-span-2 mt-4">
                 <a
                   href="#projects"
                   onClick={() => handlePageChange("Projects")}
@@ -46,7 +46,7 @@ export default function NavTabs({ currentPage, handlePageChange, on }) {
                   Projects
                 </a>
               </li>
-              <li className="font-mono mt-4">
+              <li className="font-mono mt-4 col-span-2">
                 <a
                   href="#about"
                   onClick={() => handlePageChange("About")}
@@ -59,7 +59,7 @@ export default function NavTabs({ currentPage, handlePageChange, on }) {
                   About
                 </a>
               </li>
-              <li className="font-mono mt-4">
+              <li className="font-mono mt-4 col-span-2">
                 <a
                   href="#contact"
                   onClick={() => handlePageChange("Contact")}
