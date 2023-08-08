@@ -1,66 +1,52 @@
-  # React-Three Portfolio
+# React-Three Portfolio
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  ## Site Link 💡
+## Site Link 💡
 
-  https://brandonkylely.github.io/r3-portfolio/
+https://brandonkylely.github.io/r3-portfolio/
 
-  ---
+![Brandon's Portfolio](/public/assets/three-portfolio.jpg)
 
-  ### Low Performance Site (In Progress)⚠️
+## Table of Contents
 
-  A low-performance site is in progress for users to view my portfolio without 3d rendering.
+[About](#about)
 
-  ---
+[Usage](#usage)
 
-  ![Brandon's Portfolio](/public/assets/three-portfolio.jpg)
+[Technologies Used](#technologies-used)
 
-  ## Table of Contents
+[Credits](#credits)
 
-  [About 📖](#about)
+## About
 
-  [Usage 🤔](#usage)
+📖
+This portfolio is a heavily modified version of Bruno Simon's laptop portfolio from his Three.js Journey course. While the original portfolio concept showcased an iframe to display a separate static site, I chose to overlay the pages in React. This allowed me to more easily maintain my portfolio in one repository as well as have more control over reacting to user input, such as changing the screen's reflection as the user switches tabs.
 
-  [Technologies Used ⚙️](#technologies-used)
+I also wanted to showcase the fun of using a 3d space while also trying to maintain accessibility. I created the laptop opening animation to create this fun factor, but otherwise kept the camera focused on my portfolio and the rest of the site (Bruno Simon's laptop portfolio used a farther camera at a moderate angle to showcase the contact shadows, float bounce, and lighting, and I found myself getting dizzy when actually trying to read the page!). In earlier versions of my portfolio, I added another model and more effects, but these elements, while cool, took up more gpu processing power without really adding significant functionality. Luckily the site turned out to be pretty fast and mobile responsive, despite the scene rendering 1 million triangles!
 
-  [Credits 🪙](#credits)
+### Usage
 
-  ## About 
-  📖
+Install dependencies with:
 
-  This portfolio was created using React and Threejs. Why? I play a lot of video games 🎮 and have experience developing with WebGL technologies such as Phaser and Threejs. With these technologies, I feel that I can express my creativity to its fullest potential, as well as demonstrate the ability to integrate some of the different technologies I've picked up as a fullstack software developer. I hope users will enjoy using my portfolio and have fun while they learn more about some of the cool projects I've developed. 
+```npm i```
 
-  <!-- The development of this portfolio involved using an imported 3d model of a laptop in React-Three and styling React components on top to simulate my portfolio website 💻. Iframes can be used to display actual static sites onto the 3d space, however, I chose to use components to display my abilities in using React and keep all of the code contained within this repository for easier maintenance. My last topic is the unfolding animation, which is a small demonstration of the state communication between React and Three to trigger animation events or conditionally render pages. -->
+Use ```npm run dev``` to run your application locally based on source code.
 
-  ### About Me 
-  🤓
+Use ```npm run build``` to bundle your files with Vite. 
 
-  I am a freelance full stack developer who excels in creative and logical challenges 💪. I am passionate about my career in coding and enjoy the prospect of building new and innovative software that users can enjoy. For any inquiries, feel free to contact me using the form submission in my portfolio or my contact information below!
+Use ```npm run preview``` to run your application locally based on the distribution code.
 
-  Brandon Ly 🤓 : [Github](https://github.com/brandonkylely) & [LinkedIn](https://www.linkedin.com/in/brandon-ly-7300b1205/) & [Email](mailto:brandonkly@ucla.edu)
+Use ```npm run deploy``` to deploy your application on Github Pages.
 
-  ## Usage 
-  🤔 
+## Technologies Used
 
-  Click on the laptop to begin. Navigate to different tabs by clicking them on the top right of the simulated screen. The models provided can be controlled by clicking and dragging. A debug menu is provided to check performance and adjust camera distance.
+React, React-Three Fiber, React-Three Drei, Node, Express, Vite, TailwindCSS
 
-  - Projects 🏗️: Some of my top projects and the technologies used. Hover over the image of each project to see the project name. Clicking on a project will open a new tab to the project's github repo, where you can see the deployed site link and check out my code!
+## Credits
 
-  - About 📖: My short intro, education, and link to my [resume](/public/brandon-resume.pdf)!
+[Macbook](https://market.pmnd.rs/model/macbook) by [sriniwasjha](https://blendswap.com/blend/25911) at [PMNDRS Market](https://market.pmnd.rs/)
 
-  - Contact 📝: Here, you can submit a form with your name, email, and message. I will respond to forms as promptly as possible! Also included on the bottom are some links to my socials to check out!
+[iPhone X](https://market.pmnd.rs/model/iphone-x) by [sriniwasjha](https://blendswap.com/blend/25911) at [PMNDRS Market](https://market.pmnd.rs/)
 
-  ## Technologies Used 
-  ⚙️
-
-  React, Three, React-Three Fiber, React-Three Drei, Leva, R3F-Perf, Javascript, Node, Express, Vite, HTML, CSS, TailwindCSS, HeroTofu
-
-  ## Credits 
-  🪙 
-
-  [Macbook](https://market.pmnd.rs/model/macbook) by [sriniwasjha](https://blendswap.com/blend/25911) at [PMNDRS Market](https://market.pmnd.rs/)
-
-  [iPhone X](https://market.pmnd.rs/model/iphone-x) by [sriniwasjha](https://blendswap.com/blend/25911) at [PMNDRS Market](https://market.pmnd.rs/)
-
-  [Bruno Simon's Three.js Web Course](https://threejs-journey.com/)
+[Bruno Simon's Three.js Web Course](https://threejs-journey.com/)
