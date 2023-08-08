@@ -29,7 +29,7 @@ export default function Projects({}) {
               </div>
             </div>
             <div
-              className="z-0 xl:w-56 w-60 h-32 xl:mx-10 xl:my-0 my-4 border-1 border-black rounded-3xl bg-no-repeat bg-center lg:overflow-hidden bg-auto"
+              className="z-0 xl:w-56 w-60 h-32 xl:mx-10 xl:my-0 my-4 border-1 border-black rounded-3xl bg-no-repeat bg-center lg:overflow-hidden bg-cover"
               style={{ backgroundImage: `url(${project.image})` }}
             ></div>
             <div className="xl:static absolute text-center w-56 mx-10 mb-4 invisible xl:visible">
