@@ -2,6 +2,7 @@ import { Sparkles, Shadow, ContactShadows, Float, Html, Text, PresentationContro
 import { Perf } from 'r3f-perf'
 import { useControls } from 'leva'
 import * as THREE from 'three'
+import { useState, useEffect } from 'react'
 import Computer from './components/Computer'
 
 
@@ -13,31 +14,48 @@ function Scene() {
 
   // const { nodes, materials } = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf')
   // perf toggle
-  const { Performance } = useControls('Performance', {
-    Performance: false
-  })
-
-// const { namePostion } = useControls('debug', {
-//   namePostion: [0, 1.5, -1.2]
+  
+  // const { namePostion } = useControls('debug', {
+    //   namePostion: [0, 1.5, -1.2]
+    // })
+    
+//     const { Performance } = useControls('Performance', {
+//       Performance: false
+//     })
+// const {Camera, Phone } = useControls('Scene', {
+//   Camera: {
+//     value: 0,
+//     step: 0.01,
+//     min: -1.5,
+//     max: 2.5
+// },
+//   // SparkleEffect: false,
+//   Phone: false
 // })
 
-const {Camera, Phone } = useControls('Scene', {
-  Camera: {
-    value: 0,
-    step: 0.01,
-    min: -1.5,
-    max: 2.5
-},
-  // SparkleEffect: false,
-  Phone: false
-})
+
+  /*
+  * Mobile detection
+  **/
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    window.screen.width <= 760 ? setIsMobile(true) : setIsMobile(false);
+  }, [window.screen.width]);
+
+  function detectWindowSize() {
+      window.innerWidth <= 760 ? setIsMobile(true) : setIsMobile(false);        
+  }
+  
+  window.onresize = detectWindowSize;
+
 
     return (
-    <mesh position-z={Camera}>
+    <mesh position-z={0}>
     <ambientLight intensity={0.5}/>
     {/* <OrbitControls makeDefault/> */}
-    { Performance && <Perf position="top-left" /> }
 
+    {/* {Performance && <Perf position="top-left" />} */}
 
     {/* <Stage
             shadows={ { type: 'contact', opacity: 0.2, blur: 3 } }
@@ -54,7 +72,7 @@ const {Camera, Phone } = useControls('Scene', {
       /> */}
 
   <Float rotationIntensity={ 0.6 }
-  visible={Phone} >  
+  visible={false} >  
       <mesh 
       position={[-3, -1, 0]}>
         <PresentationControls
@@ -92,7 +110,7 @@ const {Camera, Phone } = useControls('Scene', {
               "Hello World."
               ~~~~~
               Brandon Ly,
-              Software Developer
+              Software Engineer
             </Text>
 
     </PresentationControls>
