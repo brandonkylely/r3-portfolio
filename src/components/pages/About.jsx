@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About({}) {
   return (
-    <div className="grid grid-cols-2 overlayScreen">
+    <div className="grid grid-cols-2 overlayScreen itimFont">
       <div className="flex justify-center items-end flex-col font-bold text-3xl mt-16 mr-10">
         <div
           style={{ backgroundImage: "url(profile-picture1.jpg)" }}
@@ -11,7 +11,7 @@ export default function About({}) {
         <div className="mr-28 text-right">
           Socials
           <br />
-          ━━━━━━━━━━━━━━━━━━━━━
+          ━━━━
         </div>
         <div className="mr-20 w-80 text-5xl ">
           <a
@@ -46,10 +46,10 @@ export default function About({}) {
           </a>
         </div>
       </div>
-      <div className="font-bold text-3xl mt-12 col-start-2">
+      <div className="font-bold text-3xl mt-12 col-start-2 schoolbellFont">
         About Me
         <br />
-        ━━━━━━━━━━━━━━━━━━━━━━━━━━
+        ━━━━
         <p className="font-xl w-2/3 text-right ml-12">
           Hi, I'm Brandon, and welcome to my portfolio.
           <br />

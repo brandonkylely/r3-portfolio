@@ -1,5 +1,5 @@
 @import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Schoolbell&display=swap");
 
 html,
 body,
@@ -39,12 +39,21 @@ canvas {
 }
 
 @font-face {
-  font-family: "Klee One", cursive;
+  font-family: "Schoolbell", cursive;
   src: url("https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap");
+}
+
+@font-face {
+  font-family: "Itim", cursive;
+  src: url("https://fonts.googleapis.com/css2?family=Itim&family=Schoolbell&display=swap");
 }
 
 .schoolbellFont {
   font-family: "Klee One", cursive;
+}
+
+.itimFont {
+  font-family: "Itim", cursive;
 }
 
 .mt-545px {

@@ -33,7 +33,7 @@ export default function NavTabs({ currentPage, handlePageChange, on }) {
               <li className="schoolbellFont font-bold text-blue-900 nav-item col-span-6 text-3xl text-left py-4 pl-3">
                 Brandon Ly: Software Engineer
               </li>
-              <li className="font-mono col-start-7 col-span-2 mt-4">
+              <li className="itimFont col-start-7 col-span-2 mt-4">
                 <a
                   href="#projects"
                   onClick={() => handlePageChange("Projects")}
@@ -46,7 +46,7 @@ export default function NavTabs({ currentPage, handlePageChange, on }) {
                   Projects
                 </a>
               </li>
-              <li className="font-mono mt-4 col-span-2">
+              <li className="itimFont mt-4 col-span-2">
                 <a
                   href="#about"
                   onClick={() => handlePageChange("About")}
@@ -59,7 +59,7 @@ export default function NavTabs({ currentPage, handlePageChange, on }) {
                   About
                 </a>
               </li>
-              <li className="font-mono mt-4 col-span-2">
+              <li className="itimFont mt-4 col-span-2">
                 <a
                   href="#contact"
                   onClick={() => handlePageChange("Contact")}

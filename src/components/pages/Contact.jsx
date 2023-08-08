@@ -21,7 +21,7 @@ export default function Contact({}) {
   }
 
   return (
-    <div className="overlayScreen font-mono">
+    <div className="overlayScreen itimFont">
       <form
         action={formEndpoint}
         onSubmit={handleSubmit}
