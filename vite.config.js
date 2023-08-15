@@ -5,4 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/r3-portfolio/',
   plugins: [react()],
+  preview: {
+    host: '0.0.0.0',
+    port: 8080,
+  }
 })
