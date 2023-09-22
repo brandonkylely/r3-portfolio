@@ -20,7 +20,7 @@ https://brandonkylely.github.io/r3-portfolio/
 
 ## About
 
-This portfolio is inspired by Bruno Simon's R3F portfolio from Threejs Journey. While the original portfolio concept showcased some cool concepts, it was rather simple in design and I wanted to expand upon some of these ideas. For example, the original concept used an iframe to display a separate HTML/CSS page, but I chose to overlay the pages in React to gain more control over reacting to user input, such as changing the screen's reflection as the user switches tabs.
+This portfolio was inspired by Bruno Simon's R3F portfolio from Threejs Journey. While the original portfolio concept showcased some cool concepts, it was rather simple in design and I wanted to expand upon some of these ideas. For example, the original concept used an iframe to display a separate HTML/CSS page, but I chose to overlay the pages in React to gain more control over reacting to user input, such as changing the screen's reflection as the user switches tabs.
 
 I created the laptop opening animation by playing around with the scene graph and then using React hooks to set up rotation along an axis. It was a really fun feature to implement, and from a design aspect, I really enjoyed having a subtle, yet theatrical introduction to my portfolio. I tested other features, but eventually decided that my current version is the perfect tradeoff between accessibility and function, as adding sparkles or reflections were fun to use but were computationally heavy and might prevent people from being able to see my works.
 
