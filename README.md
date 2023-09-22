@@ -1,4 +1,4 @@
-# React-Three Portfolio
+# React-Three Fiber Portfolio
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -20,10 +20,11 @@ https://brandonkylely.github.io/r3-portfolio/
 
 ## About
 
-📖
-This portfolio is a heavily modified version of Bruno Simon's laptop portfolio from his Three.js Journey course. While the original portfolio concept showcased an iframe to display a separate static site, I chose to overlay the pages in React. This allowed me to more easily maintain my portfolio in one repository as well as have more control over reacting to user input, such as changing the screen's reflection as the user switches tabs.
+This portfolio is inspired by Bruno Simon's R3F portfolio from Threejs Journey. While the original portfolio concept showcased some cool concepts, it was rather simple in design and I wanted to expand upon some of these ideas. For example, the original concept used an iframe to display a separate HTML/CSS page, but I chose to overlay the pages in React to gain more control over reacting to user input, such as changing the screen's reflection as the user switches tabs.
 
-I also wanted to showcase the fun of using a 3d space while also trying to maintain accessibility. I created the laptop opening animation to create this fun factor, but otherwise kept the camera focused on my portfolio and the rest of the site (Bruno Simon's laptop portfolio used a farther camera at a moderate angle to showcase the contact shadows, float bounce, and lighting, and I found myself getting dizzy when actually trying to read the page!). In earlier versions of my portfolio, I added another model and more effects, but these elements, while cool, took up more gpu processing power without really adding significant functionality. Luckily the site turned out to be pretty fast and mobile responsive, despite the scene rendering 1 million triangles!
+I also wanted to showcase the fun of using a 3d space while also trying to maintain accessibility. I created the laptop opening animation by playing around with the scene graph and then using React hooks to set up rotation along an axis. It was a really fun feature to implement, and from a design aspect, I really enjoyed having a subtle, yet theatrical introduction to my portfolio.
+
+I believe that Three.js is a powerful frontend tool, and if used correctly, it can be very effective at grabbing a user's attention. Working with WebGL poses it's own unique challenges, such as camera-relative transformations, animation loops, and dreaded performance issues. However, I believe that it's a worthwhile technology to learn due to the novelty it can provide to web applications and simply the enjoyment of learning it!
 
 ### Usage
 
