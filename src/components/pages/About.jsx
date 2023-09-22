@@ -3,17 +3,17 @@ import React from "react";
 export default function About({}) {
   return (
     <div className="grid grid-cols-2 overlayScreen itimFont">
-      <div className="flex justify-center items-end flex-col font-bold text-3xl mt-16 mr-10">
+      <div className="flex justify-center items-end flex-col font-bold text-3xl mt-16 mr-18">
         <div
           style={{ backgroundImage: "url(profile-picture1.jpg)" }}
-          className="mr-40 overflow-hidden bg-cover border-2 border-black rounded-full w-48 h-48 text-right"
+          className="mr-40 overflow-hidden bg-cover border-2 border-black rounded-full w-48 h-48"
         ></div>
         <div className="mr-28 text-right">
           Socials
           <br />
           ━━━━
         </div>
-        <div className="mr-20 w-80 text-5xl ">
+        <div className="mr-28 w-96 text-3xl text-right">
           <a
             href="https://github.com/brandonkylely"
             target="_blank"
@@ -36,11 +36,11 @@ export default function About({}) {
             <i className="fa-brands fa-twitter"></i>
           </a>
           <br />
-
+          <br />
           <a
             href="https://brandonkylely.github.io/resume/"
             target="_blank"
-            className="text-3xl"
+            className="text-3xl text-left"
           >
             Resume <i className="fa-solid fa-location-arrow"></i>
           </a>
@@ -51,13 +51,13 @@ export default function About({}) {
         <br />
         ━━━━
         <p className="font-xl w-2/3 text-right ml-12">
-          Hi, I'm Brandon, and welcome to my portfolio.
+          Hi there, I'm Brandon.
           <br />
           <br />
-          I'm a Fullstack Software Engineer with a background in Biochemistry.
+          I'm a software engineer with a background in biochemistry.
           <br />
           <br />
-          Feel free to contact me with any business inquiries!
+          I enjoy learning new technologies and designing software solutions.
         </p>
       </div>
     </div>

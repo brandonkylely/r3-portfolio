@@ -1,5 +1,13 @@
 [
   {
+    "key": "7",
+    "name": "Sooshi",
+    "image": "sooshi.jpg",
+    "url": "https://sooshi.vercel.app/",
+    "github": "https://github.com/brandonkylely/sooshi",
+    "languages": "React, JWT, Claudia, Gitlab CI, AWS Lambda, DynamoDB, Vercel"
+  },
+  {
     "key": "6",
     "name": "Anaxi",
     "image": "anaxi.jpg",
@@ -33,16 +41,8 @@
     "languages": "JS, HTML, CSS/Bootstrap, Teleport API, GH-Pages"
   },
   {
-    "key": "5",
-    "name": "Social Network Api",
-    "image": "social-network-api.jpg",
-    "url": "",
-    "github": "https://github.com/brandonkylely/social-network-api",
-    "languages": "JS, Node, Express, Mongo, Mongoose ODM"
-  },
-  {
     "key": "4",
-    "name": "Portfolio",
+    "name": "This Portfolio",
     "image": "r3-portfolio.jpg",
     "url": "",
     "github": "https://github.com/brandonkylely/r3-portfolio",
