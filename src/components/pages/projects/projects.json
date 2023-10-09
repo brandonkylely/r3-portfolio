@@ -5,7 +5,7 @@
     "image": "sooshi.jpg",
     "url": "https://sooshi.vercel.app/",
     "github": "https://github.com/brandonkylely/sooshi",
-    "languages": "React, JWT, Claudia, Gitlab CI, AWS Lambda, DynamoDB, Vercel"
+    "languages": "React.js, Express.js, DynamoDB, Gitlab CI, Jest, Lambda"
   },
   {
     "key": "6",
@@ -13,7 +13,7 @@
     "image": "anaxi.jpg",
     "url": "https://www.anaxi.app/",
     "github": "https://github.com/brandonkylely/Anaxi-Mapper",
-    "languages": "Typescript, MERN, Vite, Three, Tailwind, Google Maps Platform, Heroku"
+    "languages": "React.js, Express.js, MongoDB, Three.js, Google Maps"
   },
 
   {
@@ -22,7 +22,7 @@
     "image": "isgame-true.jpg",
     "url": "https://isgame-true.herokuapp.com/",
     "github": "https://github.com/brandonkylely/isGame-True",
-    "languages": "JS, Node, Express, Hbs, SQL, Sequelize ORM, Phaser, Heroku"
+    "languages": "Handlebars.js, Express.js, MySQL, Phaser.io"
   },
   {
     "key": "2",
@@ -30,22 +30,14 @@
     "image": "duck-blog.jpg",
     "url": "https://the-duck-blog.herokuapp.com/",
     "github": "https://github.com/brandonkylely/duck-blog",
-    "languages": "JS, Node, Express, Hbs, SQL, Tailwind, Heroku"
-  },
-  {
-    "key": "3",
-    "name": "Urban Info",
-    "image": "urban-info.jpg",
-    "url": "https://brandonkylely.github.io/Urban-Info/",
-    "github": "https://github.com/brandonkylely/urban-info",
-    "languages": "JS, HTML, CSS/Bootstrap, Teleport API, GH-Pages"
+    "languages": "Handlebars.js, Express.js, MySQL, Tailwind"
   },
   {
     "key": "4",
-    "name": "This Portfolio",
+    "name": "Portfolio",
     "image": "r3-portfolio.jpg",
     "url": "",
     "github": "https://github.com/brandonkylely/r3-portfolio",
-    "languages": "React, Node, Express, Three, Vite, Tailwind, GH-Pages"
+    "languages": "React.js, React-Three-Fiber, Tailwind"
   }
 ]
