@@ -9,7 +9,7 @@ import {
   OrbitControls,
   Sky,
   useGLTF,
-  Stage,
+  Stage
 } from "@react-three/drei";
 import { Perf } from "r3f-perf";
 import { useControls } from "leva";
@@ -50,8 +50,7 @@ function Scene() {
 
   return (
     <mesh position-z={0}>
-      <ambientLight intensity={0.5} />
-      {/* <OrbitControls makeDefault/> */}
+      <ambientLight intensity={0.2} />
 
       {/* {Performance && <Perf position="top-left" />} */}
 
@@ -61,13 +60,7 @@ function Scene() {
             preset="portrait"
             intensity={ 2 }
         /> */}
-
-      {/* <Spotlight
-       distance={5}
-        angle={0.15}
-        attenuation={5}
-        anglePower={5} // Diffuse-cone anglePower (default: 5)
-      /> */}
+      <pointLight position={[-1, 2, 0]}/>
 
       <Float rotationIntensity={0.6} visible={false}>
         <mesh position={[-3, -1, 0]}>
