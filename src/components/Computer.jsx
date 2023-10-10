@@ -31,7 +31,7 @@ export default function Computer(props, htmlVisible) {
     }
   });
 
-  const [currentPage, setCurrentPage] = useState("noPage");
+  const [currentPage, setCurrentPage] = useState("Demo");
   const [clicked, setClicked] = useState(false);
   const [on, setOn] = useState(false);
   const [lightVisible, setLightVisible] = useState(false);
@@ -53,8 +53,9 @@ export default function Computer(props, htmlVisible) {
     if (currentPage === "Contact") {
       return <Contact />;
     }
-    // setCurrentPage("Demo");
-    return <Demo />;
+    if (currentPage === "Demo") {
+      return <Demo />;
+    }
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
