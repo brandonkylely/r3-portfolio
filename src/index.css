@@ -37,17 +37,8 @@ canvas {
 }
 
 @font-face {
-  font-family: "Schoolbell", cursive;
-  src: url("https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap");
-}
-
-@font-face {
   font-family: "Itim", cursive;
   src: url("https://fonts.googleapis.com/css2?family=Itim&family=Schoolbell&display=swap");
-}
-
-.schoolbellFont {
-  font-family: "Klee One", cursive;
 }
 
 .itimFont {
@@ -62,8 +53,12 @@ canvas {
   width: 600px;
 }
 
+.w-800px {
+  width: 800px;
+}
+
 @media (min-width: 1280px) {
-  .w-900px {
+  .w-900px-min {
     width: 900px;
   }
 }

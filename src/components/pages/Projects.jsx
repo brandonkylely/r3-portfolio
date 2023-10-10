@@ -1,9 +1,9 @@
 import React from "react";
 import projectData from "./projects/projects.json";
-// opacity-0 bg-black
+
 export default function Projects({}) {
   return (
-    <div className="schoolbellFont mt-20 w-900px w-600px text-lg font-bold grid xl:grid-cols-3 grid-cols-2">
+    <div className="itimFont mt-20 w-900px-min w-600px text-lg font-bold grid xl:grid-cols-3 grid-cols-2">
       <header className="absolute text-3xl xl:ml-10 -ml-10 -mt-14 itimFont">
         Projects
         <div className="w-80 -mt-4">
