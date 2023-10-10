@@ -7,12 +7,21 @@ import {
 import Computer from "./components/Computer";
 
 function Scene() {
+  function isMobile() {
+    if (window.innerWidth <= 1024) {return true}
+    else
+    {  return false}
+  }
+  
+  window.onresize = isMobile;
+
   return (
     <mesh position-z={0}>
 
       <Environment preset="park"/>
       <Float rotationIntensity={0.3}>
         <PresentationControls
+          enabled={!isMobile()}
           polar={[-0.2, 0.2]}
           azimuth={[-1.5, 1.3]}
           config={{ mass: 2, tension: 400 }}
