@@ -10,7 +10,7 @@ import NavTabs from "./NavTabs";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
-import Welcome from "./pages/Welcome";
+import Demo from "./pages/Demo";
 
 export default function Computer(props, htmlVisible) {
   const [hingeRotation, setHingeRotation] = useState(3.13);
@@ -57,7 +57,8 @@ export default function Computer(props, htmlVisible) {
     if (currentPage === "Contact") {
       return <Contact />;
     }
-    return <Welcome />;
+    // setCurrentPage("Demo");
+      return <Demo />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);

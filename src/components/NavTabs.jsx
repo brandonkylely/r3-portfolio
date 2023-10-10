@@ -17,7 +17,7 @@ export default function NavTabs({ currentPage, handlePageChange, on }) {
 
   return (
     <div className="opacity-80">
-      {on ? (
+      {on && (
         <div
           // className='lightScreen bg-gradient-to-t from-green-400 to-blue-500'
           className={
@@ -30,10 +30,23 @@ export default function NavTabs({ currentPage, handlePageChange, on }) {
         >
           <nav className="">
             <ul className="text-center gap-1 text-2xl grid grid-cols-12">
-              <li className="itimFont font-bold text-blue-900 nav-item col-span-6 text-3xl text-left py-4 pl-3">
-                Brandon Ly: Software Engineer
+              <li className="itimFont font-bold text-blue-900 nav-item col-span-3 text-4xl text-left py-4 pl-3">
+                Brandon Ly
               </li>
-              <li className="itimFont col-start-7 col-span-2 mt-4">
+              <li className="itimFont col-start-5 col-span-2 mt-4">
+                <a
+                  href="#demo"
+                  onClick={() => handlePageChange("Demo")}
+                  className={
+                    currentPage === "Demo"
+                      ? "bg-black bg-opacity-50 bg-cover overflow-hidden text-white py-2 px-2 border-2 border-black rounded-2xl hover:border-gray-400"
+                      : "bg-black bg-opacity-70 bg-cover overflow-hidden text-white py-2 px-2 border-2 border-black rounded-2xl hover:border-gray-400"
+                  }
+                >
+                  Demo
+                </a>
+              </li>
+              <li className="itimFont col-span-2 mt-4">
                 <a
                   href="#projects"
                   onClick={() => handlePageChange("Projects")}
@@ -77,8 +90,6 @@ export default function NavTabs({ currentPage, handlePageChange, on }) {
 
           {/* <img src='taskbar.jpg' alt='' className='mt-96 w-10/12 mx-auto mt-545px bottom-0 rounded-t-lg'/> */}
         </div>
-      ) : (
-        <div />
       )}
     </div>
   );
