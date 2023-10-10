@@ -20,17 +20,9 @@ export default function Computer(props, htmlVisible) {
   );
 
   function open() {
-    // console.log(currentPage)
-    // handlePageChange('Home')
     handleClicked();
     console.log("running open");
   }
-  //   [3.13, 0, 0,]
-  //   const { screenRotation, logoRotation, logoPosition } = useControls('screen', {
-  //     screenRotation: [hingeRotation, 0, 0,],
-  //     logoRotation: [-Math.PI, 0, -Math.PI,],
-  //     logoPosition: [0, -0.112, -1.8,]
-  //   })
 
   useFrame((state, delta) => {
     if (clicked && screenRef.current.rotation.x >= 1.31) {
@@ -72,20 +64,6 @@ export default function Computer(props, htmlVisible) {
 
   return (
     <group {...props} dispose={null} position-y={-1}>
-      {/* <Text
-      // font=""
-      color={'white'}
-      fontSize={ 0.5 }
-      position={[0, 1.2, 0]}
-      rotation={[-0.2, 0, 0]}
-      maxWidth={ 0.6 }
-      textAlign= 'center'
-    //   onClick={open}
-    //   visible={textVisible}
-    visible={false}
-    >
-      open?
-    </Text> */}
       <group position={[0, 0.52, 0]} scale={[0.1, 0.1, 0.1]}>
         <mesh
           geometry={nodes.Circle001.geometry}
@@ -229,7 +207,6 @@ export default function Computer(props, htmlVisible) {
           handlePageChange={handlePageChange}
           on={on}
         />
-        {/* <iframe src="https://brandonkylely.github.io/practice-portfolio/"/> */}
       </Html>
 
       <Html

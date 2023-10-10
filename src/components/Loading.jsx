@@ -3,7 +3,7 @@ import "./Loading.css";
 
 export default function Loading() {
   const { active, progress, errors, item, loaded, total } = useProgress();
-  return <Html wrapperClass ="itimFont" center><div class="lds-facebook">
+  return <Html wrapperClass ="itimFont" center><div className="lds-facebook">
   <div></div><div></div><div></div>
 </div>
 <br/>
