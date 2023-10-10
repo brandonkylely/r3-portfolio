@@ -23,8 +23,6 @@ canvas {
   height: 670px;
   border: none;
   border-radius: 20px;
-  /* background: #bcedf6; */
-  /* position: static; */
 }
 
 .overlayScreen {
@@ -62,10 +60,6 @@ canvas {
 
 .w-600px {
   width: 600px;
-}
-
-.w-800px {
-  width: 900px;
 }
 
 @media (min-width: 1280px) {

@@ -50,14 +50,15 @@ export default function About({}) {
         About Me
         <br />
         ━━━━
-        <p className="font-xl w-2/3 text-right ml-12">
-          Hi there, I'm Brandon.
+        <p className="text-2xl w-2/3 text-right ml-12">
+          Hello, I'm Brandon, and welcome to my portfolio.
           <br />
           <br />
-          I'm a software engineer with a background in biochemistry.
+          I'm a creative mind with a passion for problem solving and a love for
+          learning.
           <br />
           <br />
-          I enjoy learning new technologies and designing software solutions.
+          Let's build something together.
         </p>
       </div>
     </div>

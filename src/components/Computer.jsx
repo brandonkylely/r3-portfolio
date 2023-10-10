@@ -217,7 +217,7 @@ export default function Computer(props, htmlVisible) {
         position={[0, 1.52, -1.39]}
         rotation-x={-0.256}
       >
-        {on ? renderPage() : ""}
+        {on && renderPage()}
       </Html>
 
       <rectAreaLight
