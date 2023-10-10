@@ -16,7 +16,7 @@ export default function NavTabs({ currentPage, handlePageChange, on }) {
   // };
 
   return (
-    <div>
+    <div className="opacity-80">
       {on ? (
         <div
           // className='lightScreen bg-gradient-to-t from-green-400 to-blue-500'
