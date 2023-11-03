@@ -18,6 +18,8 @@ https://brandonkylely.github.io/r3-portfolio/
 
 [Credits](#credits)
 
+[Known Issues](#known-issues)
+
 ## About
 
 This portfolio was inspired by Bruno Simon's R3F portfolio from Threejs Journey. While the original portfolio concept showcased some cool concepts, it was rather simple in design and I wanted to expand upon some of these ideas. For example, the original concept used an iframe to display a separate HTML/CSS page, but I chose to overlay the pages in React to gain more control over reacting to user input, such as changing the screen's reflection as the user switches tabs.
@@ -51,3 +53,9 @@ React, React-Three Fiber, React-Three Drei, Node, Express, Vite, TailwindCSS
 [iPhone X](https://market.pmnd.rs/model/iphone-x) by [sriniwasjha](https://blendswap.com/blend/25911) at [PMNDRS Market](https://market.pmnd.rs/)
 
 [Bruno Simon's Three.js Web Course](https://threejs-journey.com/)
+
+## Known Issues
+
+Chrome (hardware acceleration): Please enable 'hardware acceleration' to avoid performance issues. This setting is on by default.
+
+IOS Safari: Users may have issues with the app if using the default setting 'tab bar', where the search bar is located on the bottom of the browser. This can be fixed by selecting 'single tab' in settings, which will move the search bar to the top of the browser.
