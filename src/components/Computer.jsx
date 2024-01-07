@@ -17,13 +17,13 @@ export default function Computer(props, htmlVisible) {
 
   function open() {
     handleClicked();
-    console.log("running open");
+    // console.log("running open");
   }
 
   useFrame((state, delta) => {
     if (clicked && screenRef.current.rotation.x >= 1.31) {
       screenRef.current.rotation.x -= delta * 1.8;
-      console.log("running rotate");
+      // console.log("running rotate");
     }
     if (screenRef.current.rotation.x < 1.32) {
       handleOn();
@@ -31,7 +31,7 @@ export default function Computer(props, htmlVisible) {
     }
   });
 
-  const [currentPage, setCurrentPage] = useState("Demo");
+  const [currentPage, setCurrentPage] = useState("Projects");
   const [clicked, setClicked] = useState(false);
   const [on, setOn] = useState(false);
   const [lightVisible, setLightVisible] = useState(false);
@@ -224,7 +224,7 @@ export default function Computer(props, htmlVisible) {
         color={
           currentPage === "About"
             ? "#B042FF"
-            : currentPage === "Contact"
+            : currentPage === "Contact"|| currentPage === "Demo"
             ? "#FA5F55"
             : "#22E4AC"
         }

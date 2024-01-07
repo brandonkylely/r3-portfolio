@@ -1,11 +1,11 @@
 [
   {
-    "key": "7",
-    "name": "Sooshi",
-    "image": "sooshi.jpg",
-    "url": "https://sooshi.vercel.app/",
-    "github": "https://github.com/brandonkylely/sooshi",
-    "languages": "React.js, Express.js, DynamoDB, Gitlab CI, Jest, Lambda"
+    "key": "1",
+    "name": "isGameTrue",
+    "image": "isgame-true.jpg",
+    "url": "https://isgame-two-89dd87bf525a.herokuapp.com/",
+    "github": "https://github.com/brandonkylely/isGame-True",
+    "languages": "2D platforming action game. Phaser, Express, MySQL."
   },
   {
     "key": "6",
@@ -13,16 +13,15 @@
     "image": "anaxi.jpg",
     "url": "https://www.anaxi.app/",
     "github": "https://github.com/brandonkylely/Anaxi-Mapper",
-    "languages": "React.js, Express.js, MongoDB, Three.js, Google Maps"
+    "languages": "3D mapping and route planning. React, Express, MongoDB."
   },
-
   {
-    "key": "1",
-    "name": "isGameTwo",
-    "image": "isgame-true.jpg",
-    "url": "https://isgame-two-89dd87bf525a.herokuapp.com/",
-    "github": "https://github.com/brandonkylely/isGame-True",
-    "languages": "Handlebars.js, Express.js, MySQL, Phaser.io"
+    "key": "7",
+    "name": "Sooshi",
+    "image": "sooshi.jpg",
+    "url": "https://sooshi.vercel.app/",
+    "github": "https://github.com/brandonkylely/sooshi",
+    "languages": "Serverless image sharing app with CI/CD pipeline. React, Express, AWS."
   },
   {
     "key": "2",
@@ -30,7 +29,7 @@
     "image": "duck-blog.jpg",
     "url": "https://the-duck-blog.herokuapp.com/",
     "github": "https://github.com/brandonkylely/duck-blog",
-    "languages": "Handlebars.js, Express.js, MySQL, Tailwind"
+    "languages": "Duck themed social media posts. Handlebars, Express, MySQL."
   },
   {
     "key": "4",
@@ -38,6 +37,14 @@
     "image": "r3-portfolio.jpg",
     "url": "",
     "github": "https://github.com/brandonkylely/r3-portfolio",
-    "languages": "React.js, React-Three-Fiber, Tailwind"
+    "languages": "An interactive portfolio. Also mobile friendly! React, Three."
+  },
+  {
+    "key": "8",
+    "name": "Drug Discovery",
+    "image": "terry-vlisidis-RflgrtzU3Cw-unsplash.jpg",
+    "url": "",
+    "github": "",
+    "languages": "ML analysis for Covid JN.1. Python, ChEMBL. (In progress)"
   }
 ]

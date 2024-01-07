@@ -21,7 +21,7 @@ export default function NavTabs({ currentPage, handlePageChange, on }) {
         <div
           // className='lightScreen bg-gradient-to-t from-green-400 to-blue-500'
           className={
-            currentPage === "Contact"
+            currentPage === "Contact" || currentPage === "Demo"
               ? "lightScreen bg-gradient-to-t from-red-400 to-blue-500"
               : currentPage === "About"
               ? "lightScreen bg-gradient-to-t from-purple-400 to-blue-500"
@@ -30,7 +30,7 @@ export default function NavTabs({ currentPage, handlePageChange, on }) {
         >
           <nav className="">
             <ul className="text-center gap-1 text-2xl grid grid-cols-12">
-              <li className="itimFont font-bold text-blue-900 nav-item col-span-3 text-4xl text-left py-4 pl-3">
+              <li className="itimFont font-bold text-black nav-item col-span-3 text-4xl text-left py-4 pl-3">
                 Brandon Ly
               </li>
               <li className="itimFont col-start-5 col-span-2 mt-4">
